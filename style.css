@@ -1,1 +1,132 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #d0f0ff, #a3d8f4);
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: #3498db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+  }
+  
+  .nav-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+.welcome-screen {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+
+h1 {
+    color: #94dbfc;
+    font-size: 2.5rem;
+}
+
+
+.panel {
+    background-color: #e6f7ff;
+    border: 2px solid #b3e5fc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+p {
+    font-size: 1.1rem;
+    color: #35889c;
+    line-height: 1.6;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: #2b7db5;
+}
+
+#game-screen {
+    display: none;
+    text-align: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3498db;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cell:hover {
+    background-color: #e0f7fa;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.fireworks {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: gold;
+}
 
