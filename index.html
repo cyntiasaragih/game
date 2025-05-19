@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Splash & Snap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-title">Splash & Snap</div>
+    <div class="nav-buttons">
+      <button id="startButton">Start</button>
+      <button id="reset" style="display: none;">Reset</button>
+      <button id="home" style="display: none;">Home</button>
+    </div>
+  </nav>
+
+  <div class="welcome-screen">
+    <h1>Welcome to Splash & Snap!</h1>
+    <div class="panel">
+      <p>
+        Splash & Snap bertema laut di mana 🐬 dan 🦀 bergiliran menempati papan 3x3.
+        Dapatkan 3 simbol berurutan secara horizontal, vertikal, atau diagonal untuk menang.
+      </p>
+    </div>
+  </div>
+
+  <div id="game-screen" style="display: none;">
+    <div id="game-board"></div>
+    <p id="status">🐬 Giliran bermain</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
